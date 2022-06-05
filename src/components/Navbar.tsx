@@ -1,6 +1,6 @@
 import React from "react";
 import { Stack, Box, Tabs, TabProps, Tab as MuiTab } from "@mui/material";
-import { makeStyles, withStyles } from "tss-react/mui";
+import { makeStyles } from "tss-react/mui";
 import Link from "/src/components/ui/Link";
 import { useRouter } from "next/router";
 
@@ -27,7 +27,6 @@ const Navbar: React.FC = () => {
       <Stack alignItems="center">
         <Tabs value={asPath} className={classes.tabs}>
           <Tab component={Link} href="/" value="/" label="home" />
-
           <Tab component={Link} href="/posts" value="/posts" label="posts" />
           <Tab component={Link} href="/about" value="/about" label="about" />
         </Tabs>
