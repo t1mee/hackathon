@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import Navbar from "../src/components/Navbar";
+import "normalize.css";
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => (
   <>
@@ -8,9 +9,8 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => (
       <title>volunteer</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-
+    <Navbar />
     <main>
-      <Navbar />
       <Component {...pageProps} />
     </main>
 
